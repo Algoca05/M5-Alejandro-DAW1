@@ -1,0 +1,5 @@
+﻿  Array.cpp
+D:\GitHub\Repositorios\Array\Array\Project1\Array.cpp(1,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\GitHub\Repositorios\Array\Array\Project1\Array.cpp(14,22): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+D:\GitHub\Repositorios\Array\Array\Project1\Array.cpp(23,22): warning C4267: '=': conversión de 'size_t' a 'int'; posible pérdida de datos
+  Project1.vcxproj -> D:\GitHub\Repositorios\Array\Array\x64\Debug\Project1.exe
