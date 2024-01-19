@@ -3,6 +3,7 @@
 #include<time.h>
 #include<windows.h>
 using namespace std;
+//me funciona el github??
 bool thisIsTheCard = true;
 int paloClubs[13] = { 1,1,1,1,1,1,1,1,1,1,1,1,1 }; //1
 int paloDiamonds[13] = { 1,1,1,1,1,1,1,1,1,1,1,1,1 }; //2
