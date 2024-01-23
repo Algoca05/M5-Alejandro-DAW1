@@ -74,63 +74,41 @@ void repartirCartas(int &num){
 	int repPalo;
 	int repCards;
 	string suit;
+	thisIsTheCard = false;
 		do
 		{
 			repPalo = rand() % 4 + 1;
 			repCards = rand() % 13;
 			
-			if (repPalo == 1)
+			if (repPalo == 1 && paloClubs[repCards] == 1)
 			{
-				if (paloClubs[repCards] ==0)
-				{
-					thisIsTheCard = false;
-				}
-				else if (paloClubs[repCards]==1)
-				{
 					paloClubs[repCards] = 0;
 					thisIsTheCard = true;
 					suit= "Clubs ";
-				}
+				
 			}
-			if (repPalo == 2)
+			if (repPalo == 2 && paloDiamonds[repCards] == 1)
 			{
-				if (paloDiamonds[repCards] == 0)
-				{
-					thisIsTheCard = false;
-				}
-				else if (paloDiamonds[repCards] == 1)
-				{
 					paloDiamonds[repCards] = 0;
 					thisIsTheCard = true;
 					suit = "Diamonds ";
-				}
+				
 			}
-				if (repPalo == 3)
+				if (repPalo == 3 && paloHearts[repCards] == 1)
 			{
-				if (paloHearts[repCards] == 0)
-				{
-					thisIsTheCard = false;
-				}
-				else if (paloHearts[repCards] == 1)
-				{
+				
 					paloHearts[repCards] = 0;
 					thisIsTheCard = true;
 					suit = "Hearts ";
-				}
+				
 			}
-				if (repPalo == 4)
+				if (repPalo == 4 && paloSpades[repCards] == 1)
 				{
-					if (paloSpades[repCards] == 0)
-					{
-						thisIsTheCard = false;
-					}
-					else if (paloSpades[repCards] == 1)
-					{
+					
 						thisIsTheCard = true;
 						paloSpades[repCards] = 0;
 						suit = "Spades ";
-
-					}
+					
 				}
 		} while (!thisIsTheCard);
 		numCard( repCards,  suit, num, play, iaCard);
