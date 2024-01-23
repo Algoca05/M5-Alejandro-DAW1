@@ -3,6 +3,7 @@
 #include<time.h>
 #include<windows.h>
 using namespace std;
+
 bool thisIsTheCard = true;
 int paloClubs[13] = { 1,1,1,1,1,1,1,1,1,1,1,1,1 }; //1
 int paloDiamonds[13] = { 1,1,1,1,1,1,1,1,1,1,1,1,1 }; //2
@@ -153,7 +154,7 @@ void shuffle() {
 void moreCards(char &play) {
 	do
 	{
-		cout << "You have " << playerCard << " points";
+		cout << "You have " << playerCard << " points\n";
 		cout << "You whant another card???\ny/n\n"; 
 		cin >> play;
 	} while (play!='y' && play!='n');
@@ -170,7 +171,8 @@ int main() {
 			cout << "You Whant to Play??? \ny/n\n";
 		
 		cin >> play;
-		} while (play != 'y' && play != 'n');
+		} 
+		while (play != 'y' && play != 'n');
 		system("pause");
 		system("cls");
 		while (play==('y'))
@@ -185,7 +187,7 @@ int main() {
 			
 
 		}
-		//cout<<"You have "<<playerCard<<" points"
+	
 		moreCards(play);
 			while (play =='y')
 			{
@@ -196,9 +198,6 @@ int main() {
 				
 					play = 'n';
 					cout << "You have " << playerCard << " points\n";
-					system("pause");
-					system("cls");
-					cout << "You lost\n\n";
 					system("pause");
 					system("cls");
 				}
