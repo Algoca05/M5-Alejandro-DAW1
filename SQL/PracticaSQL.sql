@@ -141,6 +141,86 @@ REFERENCES RELATIONSHIP_STATUSES(id);
 
 1.2.5 NOT NULL
 
+interest
+
+ALTER TABLE interests MODIFY
+    interest not_null_intersts
+        NOT NULL enable;
+
+
+rate
+
+ALTER TABLE users_interests MODIFY
+    rate not_null_rate
+        NOT NULL enable;
+
+status
+
+ALTER TABLE relationship_statuses MODIFY
+    status not_null_status
+        NOT NULL enable;
+
+username
+
+ALTER TABLE users MODIFY
+    username not_null_username
+        NOT NULL enable;
+
+relationship_status
+
+ALTER TABLE relationships MODIFY
+    relationship_status not_null_relationship_satatus
+        NOT NULL ENABLE;
+
+blocked
+
+ALTER TABLE relationships MODIFY
+    blocked not_null_blocked
+        NOT NULL ENABLE;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2) id_user
+
+
+interests
+
+CREATE SEQUENCE seq_interests
+increment by 1
+start with 1;
+
+alter table interests
+modify id integer default seq_interests.NEXVAL;
+
+
+relationship_statuses
+
+CREATE SEQUENCE seq_relationship_statuses
+increment by 1
+start with 1;
+
+users
+
+CREATE SEQUENCE seq_users
+increment by 1
+start with 1;
 
 
 
