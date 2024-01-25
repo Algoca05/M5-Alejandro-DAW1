@@ -207,7 +207,7 @@ increment by 1
 start with 1;
 
 alter table interests
-modify id integer default seq_interests.NEXVAL;
+modify id integer default seq_interests.NEXTVAL;
 
 
 relationship_statuses
@@ -216,13 +216,18 @@ CREATE SEQUENCE seq_relationship_statuses
 increment by 1
 start with 1;
 
+alter table relationship_statuses
+modify id integer default seq_relationship_statuses.NEXTVAL;
+
+
 users
 
 CREATE SEQUENCE seq_users
 increment by 1
 start with 1;
 
-
+alter table users
+modify id integer default seq_users.NEXTVAL;
 
 
 
