@@ -1,5 +1,0 @@
-﻿  Blackjack.cpp
-D:\GitHub\Repositorios\Cartas\Cartas\Blackjack.cpp(142,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-  Poker.cpp
-  Generando código...
-  Cartas.vcxproj -> D:\GitHub\Repositorios\Cartas\Cartas\x64\Debug\Cartas.exe

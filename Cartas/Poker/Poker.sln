@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Poker_juego", "Poker_juego\Poker_juego.vcxproj", "{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Debug|x64.ActiveCfg = Debug|x64
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Debug|x64.Build.0 = Debug|x64
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Debug|x86.ActiveCfg = Debug|Win32
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Debug|x86.Build.0 = Debug|Win32
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Release|x64.ActiveCfg = Release|x64
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Release|x64.Build.0 = Release|x64
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Release|x86.ActiveCfg = Release|Win32
+		{4B55BD9E-F4D0-4981-A10F-34AE9AA1AA90}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6369C49B-9EDE-44A1-BC1A-47ECE861760F}
+	EndGlobalSection
+EndGlobal
