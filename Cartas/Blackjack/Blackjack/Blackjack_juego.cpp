@@ -17,7 +17,7 @@ bool ia21 = false;
 char play = 'y';
 void numCard(int& repCards, string& suit, int& num, char play, int& iaCard) {
 
-	;
+	
 	if (repCards < 10 && repCards>0)
 	{
 		num = repCards + 1;
