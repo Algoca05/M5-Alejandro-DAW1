@@ -69,7 +69,7 @@ void numCard(int& repCards, string& suit, int& num, char play, int& iaCard) {
 		cout << repCards << " of " << suit << "\n";
 	}
 
-}
+
 void repartirCartas(int& num) {
 	int repPalo;
 	int repCards;
