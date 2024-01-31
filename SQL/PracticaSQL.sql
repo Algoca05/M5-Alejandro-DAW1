@@ -427,3 +427,5 @@ CREATE VIEW v_unblocked_relationships AS
         relationships
     WHERE
         blocked = 0;
+
+-- acabado
