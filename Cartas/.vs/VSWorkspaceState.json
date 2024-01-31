@@ -2,7 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Blackjack",
-    "\\Blackjack\\Blackjack"
+    "\\Blackjack\\Blackjack",
+    "\\Poker",
+    "\\Poker\\Poker_juego"
   ],
   "SelectedNode": "\\Blackjack\\Blackjack\\Blackjack_juego.cpp",
   "PreviewInSolutionExplorer": false
