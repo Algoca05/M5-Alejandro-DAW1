@@ -12,6 +12,7 @@ int paloSpades[13] = { 1,1,1,1,1,1,1,1,1,1,1,1,1 }; //4
 int playerCard;
 int iaCard;
 int num;
+string type;
 bool playerLose = false;
 bool ia21 = false;
 char play = 'y';
@@ -29,15 +30,18 @@ void numCard(int& repCards, string& suit, int& num, char play, int& iaCard) {
 		num = 10;
 		if (repCards == 10)
 		{
-			cout << "J of " << suit << "\n";
+			type = "J";
+			cout << type << " of " << suit << "\n";
 		}
 		else if (repCards == 11)
 		{
-			cout << "Q of " << suit << "\n";
+			type = "Q";
+			cout << type << " of " << suit << "\n";
 		}
 		else if (repCards == 12)
 		{
-			cout << "K of " << suit << "\n";
+			type = "K";
+			cout << type<<" of " << suit << "\n";
 		}
 	}
 
@@ -68,6 +72,8 @@ void numCard(int& repCards, string& suit, int& num, char play, int& iaCard) {
 		cout << "A of " << suit << "\n";
 		cout << repCards << " of " << suit << "\n";
 	}
+
+
 
 }
 void repartirCartas(int& num) {
