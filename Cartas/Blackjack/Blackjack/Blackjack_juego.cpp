@@ -50,8 +50,9 @@ void numCard(int& repCards, string& suit, int& num, char play, int& iaCard) {
 			cout << "You AS of " << suit << " is a 1 or an 11\n";
 			cin >> num;
 			repCards = num;
-			cout << repCards << " of " << suit << "\n";
+			
 		} while (num != 1 && num != 11);
+		cout << repCards << " of " << suit << "\n";
 	}
 	if (repCards == 0 && play == 'n')
 	{
