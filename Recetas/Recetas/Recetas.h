@@ -3,6 +3,6 @@
 namespace Recetas {
 	class ingr {
 	public:
-		static void a() {};
+		static void ingredients();
 	};
 }

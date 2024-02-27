@@ -6,13 +6,13 @@ using namespace std;
 
 
 
+namespace Recetas {
 
+	void ingr::ingredients() {
 
-public void ingredientes() {
-		cout << "";
-		cout << "Tell me an ingredient that you want to cook";
+		cout << "Tell me an ingredient that you want to cook\n";
 
+	}
 }
-
 
 
