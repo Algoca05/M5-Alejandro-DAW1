@@ -1,6 +1,0 @@
-﻿  Poject2.cpp
-F:\M.5 Entorns de desembolupament\P2\P2-mod-void\Project1\Poject2.cpp(136,24): warning C4805: '==': combinación no segura del tipo 'boolean' y el tipo 'bool' en la operación
-F:\M.5 Entorns de desembolupament\P2\P2-mod-void\Project1\Poject2.cpp(209,15): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
-F:\M.5 Entorns de desembolupament\P2\P2-mod-void\Project1\Poject2.cpp(308,35): warning C4805: '==': combinación no segura del tipo 'boolean' y el tipo 'bool' en la operación
-F:\M.5 Entorns de desembolupament\P2\P2-mod-void\Project1\Poject2.cpp(418,32): warning C4805: '==': combinación no segura del tipo 'boolean' y el tipo 'bool' en la operación
-  Project1.vcxproj -> F:\M.5 Entorns de desembolupament\P2\P2-mod-void\x64\Debug\Project1.exe
