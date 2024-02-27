@@ -1,0 +1,5 @@
+﻿  Blackjack2.0.cpp
+D:\GitHub\Repositorios\nuevo\Blackjack con librerias\Blackjack2.0\Blackjack2.0\Blackjack2.0.cpp(15,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+  Repartir.cpp
+  Generando código...
+  Blackjack2.0.vcxproj -> D:\GitHub\Repositorios\nuevo\Blackjack con librerias\Blackjack2.0\x64\Debug\Blackjack2.0.exe
