@@ -1,0 +1,5 @@
+﻿  Enemigo2.cpp
+  main.cpp
+  Generando código...
+main.obj : error LNK2019: símbolo externo "public: __cdecl Enemigo2::Enemigo2(void)" (??0Enemigo2@@QEAA@XZ) sin resolver al que se hace referencia en la función main
+D:\GitHub\Repositorios\nuevo\Blackjack con librerias\objetos\x64\Debug\objetos.exe : fatal error LNK1120: 1 externos sin resolver
