@@ -1,19 +1,37 @@
-// Barcos.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
-//
-
+#include "Barcos.h"
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+
+int Barcos::getSpeed() {
+	return speed;
+}
+int Barcos::getDistance() {
+	return distance;
+}
+int Barcos::getNitro() {
+	return nitro;
+}
+std::string Barcos::getName() {
+	return name;
 }
 
-// Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
-// Depurar programa: F5 o menú Depurar > Iniciar depuración
-
-// Sugerencias para primeros pasos: 1. Use la ventana del Explorador de soluciones para agregar y administrar archivos
-//   2. Use la ventana de Team Explorer para conectar con el control de código fuente
-//   3. Use la ventana de salida para ver la salida de compilación y otros mensajes
-//   4. Use la ventana Lista de errores para ver los errores
-//   5. Vaya a Proyecto > Agregar nuevo elemento para crear nuevos archivos de código, o a Proyecto > Agregar elemento existente para agregar archivos de código existentes al proyecto
-//   6. En el futuro, para volver a abrir este proyecto, vaya a Archivo > Abrir > Proyecto y seleccione el archivo .sln
+void Barcos::setSpeed(int pSpd) {
+	speed = pSpd;
+}
+void Barcos::setDistance(int pDis) {
+	distance = pDis;
+}
+void Barcos::setNitro(int pNitro) {	
+	nitro = pNitro;
+}
+void Barcos::setName(std::string pName) {	
+	name = pName;
+}
+void Barcos::getParameters() {
+	std::cout << "You have: Speed "<<speed<<" and you are "<<distance<<" meters ";
+	if (nitro ==1)
+	{
+		std::cout << "Nitro available: yes";
+	}
+	else std::cout << "Nitro available: no";
+}
