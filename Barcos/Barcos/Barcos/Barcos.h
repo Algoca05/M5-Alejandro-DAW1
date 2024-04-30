@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 
+
 class Barcos {
 
 private:
@@ -25,7 +26,27 @@ public:
 	Barcos(int speed,int distance, int nitro, std::string name);
 };
 
-class parts {
+class Part {
+private:
+	std::string name;
+	int speed;
+	int weight;
+public:
+	int getSpeed();
+	int getWeight();
+	std::string getName();
 
+	void setSpeed(int pSpd);
+	void setWeight(int pWght);
+	void setName(std::string pName);
 
+	Part();
+	Part(int speed, int weight, int nitro, std::string name);
 };
+
+namespace ship {
+	class fShip {
+	public:
+
+	};
+}

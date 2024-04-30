@@ -3,9 +3,31 @@
 
 #include <iostream>
 #include"Barcos.h"
-using namespace std;
+
+#include "Game.h"
+
 int main()
 {
-    
+	std::srand(static_cast<unsigned>(time(NULL)));
+	//init game
+	Game game;
+	game.loadFiles();
+
+
+	//Game loop
+	while (game.running())
+	{
+	
+		
+		//update
+		game.update();
+		//render
+		game.render();
+		//Draw your game
+		
+	}
+	//End application
+	return 0;
 }
+
 

@@ -1,4 +1,7 @@
-﻿  Barcos.cpp
-  Carrera Barcos.cpp
-  Generando código...
+﻿  Game.cpp
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(2,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(3,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(4,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(5,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(45,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
   Barcos.vcxproj -> D:\GitHub\Repositorios\Barcos\Barcos\x64\Debug\Barcos.exe
