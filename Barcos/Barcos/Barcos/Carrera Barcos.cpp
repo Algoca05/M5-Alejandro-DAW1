@@ -17,8 +17,9 @@ int main()
 	//Game loop
 	while (game.running())
 	{
-	
-		
+		srand(time(NULL));
+
+
 		//update
 		game.update();
 		//render

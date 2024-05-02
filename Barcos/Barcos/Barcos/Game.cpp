@@ -4,11 +4,7 @@ void Game::initVariables()
 {
 	this->window = nullptr;
 
-	//game logic
-	this->points = 0;
-	this-> enemySpawnTimer = this-> enemySpawnTimerMax;
-	this-> enemySpawnTimerMax= 10.f;
-	this-> maxEnemies=50;
+	
 }
 
 void Game::initWindow()
@@ -32,9 +28,37 @@ void Game::initEnemies()
 	ship2.setTexture(ship);
 	this->ship2.setPosition(-25.f, 570.f);
 	this->ship2.setScale(sf::Vector2f(0.1f, 0.1f));
+
+	moon.loadFromFile("Files/moon.png");
+
+	spriteMoon.setTexture(moon);
+	this->spriteMoon.setPosition(1150.f, 0.f);
+	this->spriteMoon.setScale(sf::Vector2f(0.1f, 0.1f));
 	
 	/*this->enemy.setOutlineColor(sf::Color::Cyan);
 	this->enemy.setOutlineThickness(1.f);*/
+
+}
+void Game::initDice()
+{
+	
+	int time = reloj.getElapsedTime().asMilliseconds();
+	float frameDuration = 150;
+	int numFrames = 6;
+	int frame = static_cast<int>(time / frameDuration) % numFrames +1;
+	if (frame != currentFrame)
+	{
+		
+
+
+			currentFrame = frame;
+			if (!moon.loadFromFile("Files/Dado/" + std::to_string(frame) + ".png")) {
+				// Manejar error
+			}
+			spriteMoon.setTexture(moon);
+		
+	}
+	
 
 }
 void Game::loadFiles()
@@ -83,16 +107,24 @@ void Game::pollEvents()
 	}
 }
 
-void Game::sapwnShip(){
 
-//ship1.scale(0.50, 0.35);
-//ship2.setTexture(ship);
-//ship2.scale(0.50, 0.35);
+int Game::dice()
+{
+	int number = rand() % 6 + 1;
 
-	
-	
-	
+	return number;
 }
+
+void Game::shipMove(int number)
+{
+	int count1 = 0;
+	int count2 = 0;
+
+
+
+}
+
+
 
 void Game::update()
 {
@@ -112,39 +144,29 @@ void::Game::updateMousePosition() {
 
 void Game::updateEnemies()
 {
-	//if (this->enemies.size() < this-> maxEnemies)
-	//{
-	//if (this->enemySpawnTimer >= this->enemySpawnTimerMax)
-	//{
-	//	this->sapwnEnemy();
-	//	this->enemySpawnTimer = 0.f;
-	//}
-	//else this->enemySpawnTimer += 1.f;
-	//}
+	
 
-	////Move enemies
-	//for (int i = 0 ; i <this->enemies.size();i++)
-	//{
-	//	bool deleted = false;
-	//	this->enemies[i].move(0.f,2.f);
+	bool yourTurn = true;
 
-	//	//check click
-	//	if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
-	//	{
-	//		if (this->enemies[i].getGlobalBounds().contains(this->MousePosView))
-	//		{
-	//			deleted = true;
-	//		}
-	//	}
-	//	if (this->enemies[i].getPosition().y>this->window->getSize().y)
-	//	{
-	//		deleted = true;
-	//	}
-	//	if (deleted)
-	//	{
-	//		this->enemies.erase(this->enemies.begin()+i);
-	//	}
-	//}
+		//check click
+	if (yourTurn)
+	{
+
+	
+		if (sf::Mouse::isButtonPressed(sf::Mouse::Left))
+		{
+			if (this->spriteMoon.getGlobalBounds().contains(this->MousePosView))
+			{
+				this->initDice();
+
+
+				int number = dice();
+				yourTurn = false;
+				shipMove(number);
+			}
+
+		}
+	}
 }
 
 void Game::render()
@@ -156,21 +178,17 @@ void Game::render()
 	this->window->draw(spriteCity);
 	//Draw Game objects
 	this->renderEnemies();
-
 	
 
 	this->window->display();
-	
 }
 
 void Game::renderEnemies()
 {
-	/*for (auto& e : this->enemies)
-	{
-		this->window->draw(e);
-	}*/
+	
 	this->window->draw(ship1); 
 	this->window->draw(ship2);
+	this->window->draw(spriteMoon);
 
 }
 

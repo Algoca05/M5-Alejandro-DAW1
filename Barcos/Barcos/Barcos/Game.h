@@ -6,6 +6,8 @@
 #include<iostream>
 #include <Vector>
 #include <ctime>
+#include "Barcos.h"
+#include <time.h>
 
 class Game
 {
@@ -13,6 +15,7 @@ private:
 	//Fondo
 	sf::Texture city;
 	sf::Texture ship;
+	sf::Texture moon;
 	//Window
 	sf::RenderWindow* window;
 	sf::VideoMode VideoMode;
@@ -24,8 +27,10 @@ private:
 	//Font
 	sf::Font font;
 
+	//Reloj
+	sf::Clock reloj;
 	
-
+	
 
 	//game logic
 	unsigned points;
@@ -33,14 +38,19 @@ private:
 	float enemySpawnTimerMax;
 	int maxEnemies;
 	bool mouseHeld;
+	int currentFrame =1;
+
+
 	//game objects
 	sf::Sprite ship1;
 	sf::Sprite ship2;
 	sf::Sprite spriteCity;
+	sf::Sprite spriteMoon;
 	//function
 	void initVariables();
 	void initWindow();
 	void initEnemies();
+	void initDice();
 	
 public:
 	//constructors / destructors
@@ -61,5 +71,7 @@ public:
 
 	void pollEvents();
 	void sapwnShip();
+	int dice();
+	void shipMove(int number);
 };
 
