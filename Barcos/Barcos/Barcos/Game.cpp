@@ -36,6 +36,12 @@ void Game::initEnemies()
 	spriteMoon.setTexture(moon);
 	this->spriteMoon.setPosition(1150.f, 0.f);
 	this->spriteMoon.setScale(sf::Vector2f(0.1f, 0.1f));
+
+	mars.loadFromFile("Files/mars.png");
+
+	spriteMars.setTexture(mars);
+	this->spriteMars.setPosition(300.f, 50.f);
+	this->spriteMars.setScale(sf::Vector2f(0.3f, 0.3f));
 	
 	/*this->enemy.setOutlineColor(sf::Color::Cyan);
 	this->enemy.setOutlineThickness(1.f);*/
@@ -134,10 +140,10 @@ void Game::shipMove(int number)
 	barco1.setDistance(barco1.getDistance()+barco1.getSpeed());
 
 	int number2 =dice() ;
-	if (!moon.loadFromFile("Files/Dado/" + std::to_string(number2) + ".png")) {
-		// Manejar error
-	}
-	spriteMoon.setTexture(moon);
+	//if (!moon.loadFromFile("Files/Dado/" + std::to_string(number2) + ".png")) {
+	//	// Manejar error
+	//}
+	//spriteMoon.setTexture(moon);
 
 	barco2.setSpeed(barco2.getSpeed() + number2);
 
@@ -145,7 +151,7 @@ void Game::shipMove(int number)
 
 	barco2.setDistance(barco2.getDistance() + barco2.getSpeed());
 
-	std::cout << barco1.getDistance() << ", " << barco2.getDistance()<<"\n";
+	std::cout << barco1.getSpeed() << ", " << barco2.getSpeed()<<"\n";
 }
 
 
@@ -185,7 +191,10 @@ void Game::updateEnemies()
 	bool yourTurn = true;
 	if (barco1.getDistance() > 1000 || barco2.getDistance() > 1000)
 	{
+		moon.loadFromFile("Files/moon.png");
 
+		spriteMoon.setTexture(moon);
+		this->window->draw(spriteMoon);
 		 yourTurn = false;
 	}
 		//check click
@@ -207,7 +216,23 @@ void Game::updateEnemies()
 				yourTurn = false;
 				shipMove(number);
 			}
+			if (this->spriteMars.getGlobalBounds().contains(this->MousePosView))
+			{
+				if (barco1.getNitro())
+				{
+					int number = rand() % 2;
+					if (number == 0)
+					{
+						barco1.setSpeed(barco1.getSpeed() * 2);
+					}
+					else
+					{
+						barco1.setSpeed(barco1.getSpeed() / 2);
+					}
 
+					barco1.setNitro(false);
+				}
+			}
 		}
 	}
 }
@@ -232,6 +257,7 @@ void Game::renderEnemies()
 	this->window->draw(ship1); 
 	this->window->draw(ship2);
 	this->window->draw(spriteMoon);
+	this->window->draw(spriteMars);
 
 }
 

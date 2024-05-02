@@ -16,6 +16,7 @@ private:
 	sf::Texture city;
 	sf::Texture ship;
 	sf::Texture moon;
+	sf::Texture mars;
 	//Window
 	sf::RenderWindow* window;
 	sf::VideoMode VideoMode;
@@ -46,6 +47,7 @@ private:
 	sf::Sprite ship2;
 	sf::Sprite spriteCity;
 	sf::Sprite spriteMoon;
+	sf::Sprite spriteMars;
 	//function
 	void initVariables();
 	void initWindow();

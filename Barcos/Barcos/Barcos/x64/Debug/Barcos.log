@@ -3,7 +3,7 @@ D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(2,10): warning C4067: símbol
 D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(3,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(4,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
 D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.h(5,10): warning C4067: símbolos (token) inesperados después de la directiva del preprocesador; se esperaba una nueva línea
-D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(74,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
-D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(132,29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
-D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(144,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(80,24): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(138,29): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\GitHub\Repositorios\Barcos\Barcos\Barcos\Game.cpp(150,28): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
   Barcos.vcxproj -> D:\GitHub\Repositorios\Barcos\Barcos\x64\Debug\Barcos.exe
