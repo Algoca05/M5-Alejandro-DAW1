@@ -2,8 +2,6 @@
 //
 
 #include <iostream>
-#include"Barcos.h"
-
 #include "Game.h"
 
 int main()
@@ -18,7 +16,10 @@ int main()
 	while (game.running())
 	{
 		srand(time(NULL));
-
+		
+		
+		//std::cout<<ship1.getSpeed();
+		
 
 		//update
 		game.update();

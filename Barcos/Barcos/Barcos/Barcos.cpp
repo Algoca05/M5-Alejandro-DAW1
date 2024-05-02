@@ -8,8 +8,12 @@ int Barcos::getSpeed() {
 int Barcos::getDistance() {
 	return distance;
 }
-int Barcos::getNitro() {
-	return nitro;
+bool Barcos::getNitro() {
+	if (nitro)
+	{
+		return true;
+	}
+	else return false;
 }
 std::string Barcos::getName() {
 	return name;
@@ -21,17 +25,38 @@ void Barcos::setSpeed(int pSpd) {
 void Barcos::setDistance(int pDis) {
 	distance = pDis;
 }
-void Barcos::setNitro(int pNitro) {	
+void Barcos::setNitro(bool pNitro) {	
 	nitro = pNitro;
 }
 void Barcos::setName(std::string pName) {	
 	name = pName;
 }
+
+
+
 void Barcos::getParameters() {
 	std::cout << "You have: Speed "<<speed<<" and you are "<<distance<<" meters ";
-	if (nitro ==1)
+	if (nitro)
 	{
 		std::cout << "Nitro available: yes";
 	}
 	else std::cout << "Nitro available: no";
+	std::cout << "Name: "<<name<<"\n";
 }
+
+
+Barcos::Barcos(int pSpd, int pDis, bool pNitro, std::string pName)
+{
+	speed = pSpd;
+	distance = pDis;
+	nitro = pNitro;
+	name = pName;
+}
+
+Barcos::Barcos()
+{
+}
+
+
+
+

@@ -34,9 +34,9 @@ private:
 
 	//game logic
 	unsigned points;
-	float enemySpawnTimer;
-	float enemySpawnTimerMax;
-	int maxEnemies;
+	Barcos barco1;
+	Barcos barco2;
+	bool endGame = false;
 	bool mouseHeld;
 	int currentFrame =1;
 
@@ -50,7 +50,7 @@ private:
 	void initVariables();
 	void initWindow();
 	void initEnemies();
-	void initDice();
+	void initDice(int number);
 	
 public:
 	//constructors / destructors
@@ -70,8 +70,11 @@ public:
 	void loadFiles();
 
 	void pollEvents();
-	void sapwnShip();
 	int dice();
 	void shipMove(int number);
+	
+
+	//Variables
+
 };
 
