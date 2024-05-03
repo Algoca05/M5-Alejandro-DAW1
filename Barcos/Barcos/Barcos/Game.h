@@ -17,6 +17,10 @@ private:
 	sf::Texture ship;
 	sf::Texture moon;
 	sf::Texture mars;
+	sf::Texture finish;
+	sf::Texture win;
+	sf::Texture lose;
+
 	//Window
 	sf::RenderWindow* window;
 	sf::VideoMode VideoMode;
@@ -40,6 +44,7 @@ private:
 	bool endGame = false;
 	bool mouseHeld;
 	int currentFrame =1;
+	
 
 
 	//game objects
@@ -48,6 +53,9 @@ private:
 	sf::Sprite spriteCity;
 	sf::Sprite spriteMoon;
 	sf::Sprite spriteMars;
+	sf::Sprite spriteWin;
+	sf::Sprite spriteFinish;
+	sf::Sprite spriteLose;
 	//function
 	void initVariables();
 	void initWindow();
@@ -74,7 +82,7 @@ public:
 	void pollEvents();
 	int dice();
 	void shipMove(int number);
-	
+	void end();
 
 	//Variables
 

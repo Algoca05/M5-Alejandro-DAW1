@@ -43,8 +43,21 @@ void Game::initEnemies()
 	this->spriteMars.setPosition(300.f, 50.f);
 	this->spriteMars.setScale(sf::Vector2f(0.3f, 0.3f));
 	
-	/*this->enemy.setOutlineColor(sf::Color::Cyan);
-	this->enemy.setOutlineThickness(1.f);*/
+	
+	win.loadFromFile("Files/winner.png");
+
+	spriteWin.setTexture(win);
+	this->spriteWin.setPosition(650.f, 240.f);
+	this->spriteWin.setScale(sf::Vector2f(0.8f, 0.8f));
+	
+	
+	lose.loadFromFile("Files/lose.png");
+
+	spriteLose.setTexture(lose);
+	this->spriteLose.setPosition(600.f, 200.f);
+	this->spriteLose.setScale(sf::Vector2f(0.2f, 0.2f));
+	
+
 
 }
 void Game::initDice(int number)
@@ -154,8 +167,17 @@ void Game::shipMove(int number)
 	std::cout << barco1.getSpeed() << ", " << barco2.getSpeed()<<"\n";
 }
 
-
-
+void Game::end()
+{
+	if (barco1.getDistance()<barco2.getDistance())
+	{
+		this->window->draw(spriteLose);
+	}
+	else
+	{
+		this->window->draw(spriteWin);
+	}
+}
 
 
 
@@ -196,6 +218,8 @@ void Game::updateEnemies()
 		spriteMoon.setTexture(moon);
 		this->window->draw(spriteMoon);
 		 yourTurn = false;
+		 endGame = true;
+		 
 	}
 		//check click
 	if (yourTurn)
@@ -258,6 +282,10 @@ void Game::renderEnemies()
 	this->window->draw(ship2);
 	this->window->draw(spriteMoon);
 	this->window->draw(spriteMars);
+	if (endGame)
+	{
+		this->end();
+	}
 
 }
 
