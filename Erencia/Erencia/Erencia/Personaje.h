@@ -1,5 +1,5 @@
 #pragma once
-#include "Boss.h"
+#include <iostream>
 
 class Personaje
 {
@@ -32,4 +32,12 @@ public:
 
 	void getParamsEnemies();
 	void getParamsHero();
+	
+	
+
+	Personaje(int pHP, int pAtk, int pSpd, int pMAtk, int pLives, int pDef, std::string pName);
+	Personaje(int pHP, int pAtk, int pSpd, int pDef, std::string pName);
+	Personaje();
+	
+
 };

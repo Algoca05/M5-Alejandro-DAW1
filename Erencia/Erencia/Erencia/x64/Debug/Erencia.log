@@ -1,0 +1,9 @@
+﻿  Juego.cpp
+D:\GitHub\Repositorios\Erencia\Erencia\Erencia\Juego.cpp(8,12): warning C4244: 'argumento': conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+D:\GitHub\Repositorios\Erencia\Erencia\Erencia\Juego.cpp(24,17): error C2440: '=': no se puede realizar la conversión de 'const char [8]' a 'int'
+D:\GitHub\Repositorios\Erencia\Erencia\Erencia\Juego.cpp(24,17): message : No existe un contexto en el que sea posible realizar esta conversión
+D:\GitHub\Repositorios\Erencia\Erencia\Erencia\Juego.cpp(37,10): error C2679: '=' binario: no se encontró un operador que adopte un operando en la parte derecha de tipo 'const char [8]' (o bien no existe una conversión aceptable)
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\ostream(66,39): message : puede ser 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator =(const std::basic_ostream<char,std::char_traits<char>> &)'
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.37.32822\include\ostream(53,39): message : o       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator =(std::basic_ostream<char,std::char_traits<char>> &&) noexcept'
+D:\GitHub\Repositorios\Erencia\Erencia\Erencia\Juego.cpp(37,10): message : al hacer coincidir la lista de argumentos '(std::basic_ostream<char,std::char_traits<char>>, const char [8])'
+D:\GitHub\Repositorios\Erencia\Erencia\Erencia\Juego.cpp(7,12): fatal  error C1075: "{": no se encontró ningún token coincidente

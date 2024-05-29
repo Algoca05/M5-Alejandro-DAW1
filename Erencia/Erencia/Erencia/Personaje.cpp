@@ -2,11 +2,6 @@
 //
 
 #include <iostream>
-
-int main()
-{
-    std::cout << "Hello World!\n";
-}
 #include "Personaje.h"
 
 
@@ -94,6 +89,33 @@ void Personaje::getParamsEnemies()
 void Personaje::getParamsHero()
 {
     std::cout << "Hero: \nHP = " << health << "\nName = " << name << "\nCharge = " << megaAttack << "\nLives = " << lives;
+}
+
+
+
+Personaje::Personaje(int pHP, int pAtk, int pSpd, int pMAtk, int pLives, int pDef, std::string pName)
+{
+    health = pHP;
+    attack = pAtk;
+    speed = pSpd;
+    megaAttack = pMAtk;
+    lives = pLives;
+    defensa = pDef;
+    name = pName;
+
+}
+
+Personaje::Personaje(int pHP, int pAtk, int pSpd, int pDef, std::string pName)
+{
+    health = pHP;
+    attack = pAtk;
+    speed = pSpd;
+    defensa = pDef;
+    name = pName;
+}
+
+Personaje::Personaje()
+{
 }
 
 
